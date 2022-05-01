@@ -1,6 +1,6 @@
 import * as VueRouter from 'vue-router' 
 
-import Home from '../pages/home.vue'
+const Home = () => import ('../pages/Home.vue')
 const About = () => import ('../pages/About.vue')
 const Projects = () => import ('../pages/Projects.vue')
 
