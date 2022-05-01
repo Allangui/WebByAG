@@ -1,0 +1,82 @@
+[
+    {
+        "id":1,
+        "name":"Bookmark",
+        "description":"Page de produit ayant permis le travail responsive avec quelques actions dynamiques",
+        "img":"./carousel/imgBookmark.jpg",
+        "technology":["Vue 3","Vite"],
+        "urlWebsite":"http://book-mark-blush.vercel.app/",
+        "urlGithub":"https://github.com/Allangui/BookMark.git",
+        "isHover":false
+    },
+    {
+        "id":2,
+        "name":"Commentary section",
+        "description":"Simulation d'une section commentaire avec un LocalStorage",
+        "img":"./carousel/ImgComments.jpg",
+        "technology":["Vue 3","Vite"],
+        "urlWebsite":"http://interactive-comments-three.vercel.app/",
+        "urlGithub":"https://github.com/Allangui/interactive-comments.git",
+        "isHover":false
+    },
+    {
+        "id":3,
+        "name":"Calculate",
+        "description":"Calculatrice dynamique avec 3 thèmes de couleurs différentes",
+        "img":"./carousel/ImgCalculate.jpg",
+        "technology":["Vue 3","Vite"],
+        "urlWebsite":"http://calculate-by-ag.vercel.app/",
+        "urlGithub":"https://github.com/Allangui/Calculate-byAG.git",
+        "isHover":false
+    },
+    {
+        "id":4,
+        "name":"Todo-list",
+        "description":"Liste de tâches avec possibilité de drag and drop",
+        "img":"./carousel/ImgTodo-list.jpg",
+        "technology":["Vue 3","Vite"],
+        "urlWebsite":"http://todo-list-allangui.vercel.app/",
+        "urlGithub":"https://github.com/Allangui/todo-list.git",
+        "isHover":false
+    },
+    {
+        "id":5,
+        "name":"Space-tourism",
+        "description":"Maquette de voyage spacial en SPA ayant pour but de mettre en pratique Vue router",
+        "img":"./carousel/ImgSpace-tourism.jpg",
+        "technology":["Vue 3","Vite","Vue router"],
+        "urlWebsite":"http://space-tourism-by-ag.vercel.app/",
+        "urlGithub":"https://github.com/Allangui/space-tourism-byAG.git",
+        "isHover":false
+    },
+    {
+        "id":6,
+        "name":"HomePage",
+        "description":"Simple page pour travailler une premières fois avec les Transitions Vue",
+        "img":"./carousel/ImgHomepage.jpg",
+        "technology":["Vue 3","Vite"],
+        "urlWebsite":"http://room-page-livid.vercel.app/",
+        "urlGithub":"https://github.com/Allangui/roomPage.git",
+        "isHover":false
+    },
+    {
+        "id":7,
+        "name":"Job-listening",
+        "description":"Système de tri par catégories, premier projet avec Vue 3",
+        "img":"./carousel/ImgJob-listening.jpg",
+        "technology":["Vue 3","Vite"],
+        "urlWebsite":"http://job-listening-by-ag.vercel.app/",
+        "urlGithub":"https://github.com/Allangui/job-listening-byAG.git",
+        "isHover":false
+    },
+    {
+        "id":8,
+        "name":"Virtual-Spacing",
+        "description":"Page de site pour VR avec un joli design ayant permis de travailler sur le responsive",
+        "img":"./carousel/ImgVirtual-spacing.jpg",
+        "technology":["HTML","CSS"],
+        "urlWebsite":"http://virtual-spacing.vercel.app/",
+        "urlGithub":"https://github.com/Allangui/virtual-spacing.git",
+        "isHover":false
+    }
+]

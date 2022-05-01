@@ -1,0 +1,51 @@
+body{
+    background-color:var(--navy);
+    font-family: var(--font-sans);
+    font-size: var(--fz-md);
+    color: var(--light-slate);
+
+  }
+  button{
+    font-family: var(--font-sans);
+  }
+  :root{
+    --dark-navy: #020c1b;
+    --navy: #0a192f;  /* background-color */
+    --light-navy: #112240;
+    --lightest-navy: #233554; /* BG Topbar*/
+    --navy-shadow: rgba(2,12,27,0.7);
+    --dark-slate: #495670;
+    --slate: #8892b0; /* logoName */
+    --light-slate: #a8b2d1; /* paragraphes */
+    --lightest-slate: #ccd6f6; /* titles */
+    --white: #e6f1ff;
+    --light-white: rgba(255, 255, 255, 0.8);
+    --green: #64ffda; /* mise en évidence */
+    --green-transparent:rgba(100, 255, 218,.8) ; /* mise en évidence */
+    --green-tint: rgba(100,255,218,0.1);
+    --pink: #f57dff;
+    --blue: #0a192f;
+    --font-sans: "Raleway",sans-serif;
+    --font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    --fz-xxs: 12px;
+    --fz-xs: 13px;
+    --fz-sm: 14px;
+    --fz-md: 16px;
+    --fz-lg: 18px;
+    --fz-xl: 20px;
+    --fz-xxl: 22px;
+    --fz-heading: 32px;
+    --border-radius: 4px;
+    --nav-height: 100px;
+    --tab-height: 42px;
+    --tab-width: 120px;
+    --topbarHeight:100px;
+  }
+  @font-face {
+    font-family: "Raleway";
+    font-weight: 100 800;
+    font-style: normal;
+    font-display: auto;
+    unicode-range: U+000-5FF;
+    src: local("Raleway"), url("./fonts/Raleway/Raleway-Regular.woff2") format("woff2"), url("./fonts/Raleway/Raleway-Regular.woff") format("woff");
+  }
