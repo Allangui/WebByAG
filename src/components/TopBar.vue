@@ -12,7 +12,7 @@
             <router-link :to="{hash: '#contact'}" >Contact</router-link>
         </nav>
         <Transition name="menu">
-            <MenuMobile v-if="isMenuOpen"/>
+            <MenuMobile v-if="isMenuOpen & mq.s"  v-click-outside="onClickOutside"/>
         </Transition>
     </div>
 </template>
@@ -20,18 +20,33 @@
 <script>
 import Burger from "./Burger.vue"
 import MenuMobile from "./MenuMobile.vue"
-    export default {
-        inject:["mq"],
-        components: {
-        Burger,
-        MenuMobile
+import vClickOutside from "click-outside-vue3"
+
+export default {
+    inject:["mq"],
+    components: {
+    Burger,
+    MenuMobile
     },
-        data() {
-            return {
-                isMenuOpen:false,
-            }
-        },
+    data() {
+        return {
+            isMenuOpen:false,
+        }
+    },
+    directives: {
+      clickOutside: vClickOutside.directive
+    },
+    methods: {
+      onClickOutside (event) {
+          console.log(event)
+        if( (event.y ) > 100){
+            this.isMenuOpen=false
+        }else if(event.targetTouches[0].clientY >100){
+            this.isMenuOpen=false
+        }
+      }
     }
+}
 </script>
 
 <style lang="scss" scoped>

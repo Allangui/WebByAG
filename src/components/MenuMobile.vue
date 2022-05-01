@@ -1,5 +1,5 @@
 <template>
-    <div class="mainMenuMobile">
+    <div class="mainMenuMobile" >
         <nav>
             <router-link :to="{hash: '#home'}">Home</router-link>
             <router-link :to="{hash: '#about'}">About</router-link>
@@ -10,9 +10,9 @@
 </template>
 
 <script>
-    export default {
-        
-    }
+export default {
+
+}
 </script>
 
 <style lang="scss" scoped>
