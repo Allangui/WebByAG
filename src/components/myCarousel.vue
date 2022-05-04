@@ -3,7 +3,7 @@
     <swiper
       class="swiper"
       :modules="modules"
-      :pagination="true"
+      :pagination="{ clickable: true }"
       :effect="'coverflow'"
       :grab-cursor="true"
       :centered-slides="true"
