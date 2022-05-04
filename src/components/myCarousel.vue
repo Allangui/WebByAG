@@ -47,7 +47,6 @@
   import 'swiper/scss'
   import 'swiper/scss/pagination'
   import 'swiper/scss/effect-coverflow'
-  import 'swiper/css/bundle'
 
   export default ({
     components: {
