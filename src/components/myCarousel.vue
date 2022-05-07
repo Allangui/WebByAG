@@ -67,7 +67,7 @@
 </script>
 <style lang="scss">
 :root {
-    --swiper-pagination-color: var(--swiper-theme-color);
+    --swiper-pagination-color: var(--green);
     --swiper-pagination-bullet-size: 8px;
     --swiper-pagination-bullet-width: 15px;
     --swiper-pagination-bullet-height: 2px;
