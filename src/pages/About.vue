@@ -1,7 +1,7 @@
 <template>
     <div class="mainAbout" :class="{mainAboutDesk: mq.mPlus}"  >
         <h2 data-aos="fade-right" data-aos-duration="1500">A propos de moi</h2>
-        <p class="pAbout" data-aos="fade-right" data-aos-duration="1500">A l'heure actuelle je suis technicien en electricité-automation dans une grande usine automobile aux 4anneaux pour ne pas les citer. C'est donc tout naturellement que j'ai décidé d'y consacrer une petite section en parrallèle dans ce portfolio.
+        <p class="pAbout" data-aos="fade-right" data-aos-duration="1500">A l'heure actuelle je suis technicien en electricité-automation dans une grande usine automobile de la marque aux 4 anneaux. C'est donc tout naturellement que j'ai décidé d'y consacrer une petite section en parrallèle dans ce portfolio.
         A coté de ça je passe le plus clair de mon temps libre à faire du developpement web pour mon plaisir et c'est pourquoi j'ai comme ambition de joindre l'utile à l'agréable en en faisant une activité complémentaire.
         </p>
         <div class="choice" data-aos="fade-up" data-aos-duration="2000">
