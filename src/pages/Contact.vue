@@ -1,10 +1,10 @@
 <template>
     <div class="mainContact" :class="{mainContactDesk: mq.mPlus}">
-        <h2 data-aos="fade-right" data-aos-duration="1000">Contactez-moi !</h2>
-        <p>
+        <h2 data-aos="fade-right" data-aos-duration="1500">Contactez-moi !</h2>
+        <p data-aos="fade-right" data-aos-duration="1500">
           Pour toutes questions ou demande n'hésitez pas a me contacter je reviendrais vers vous dans les plus bref délais.
         </p>
-        <div class="container" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container" data-aos="fade-up" data-aos-duration="1500">
             <form @submit.prevent="sendEmail">
                 <label>Nom :</label>
                 <input 

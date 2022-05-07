@@ -1,7 +1,7 @@
 <template>
     <div class="mainAbout" :class="{mainAboutDesk: mq.mPlus}"  >
-        <h2 data-aos="fade-right" data-aos-duration="1000">A propos de moi</h2>
-        <p class="pAbout" data-aos="fade-right" data-aos-duration="1000">A l'heure actuelle je suis technicien en electricité-automation dans une grande usine automobile aux 4anneaux pour ne pas les citer. C'est donc tout naturellement que j'ai décidé d'y consacrer une petite section en parrallèle dans ce portfolio.
+        <h2 data-aos="fade-right" data-aos-duration="1500">A propos de moi</h2>
+        <p class="pAbout" data-aos="fade-right" data-aos-duration="1500">A l'heure actuelle je suis technicien en electricité-automation dans une grande usine automobile aux 4anneaux pour ne pas les citer. C'est donc tout naturellement que j'ai décidé d'y consacrer une petite section en parrallèle dans ce portfolio.
         A coté de ça je passe le plus clair de mon temps libre à faire du developpement web pour mon plaisir et c'est pourquoi j'ai comme ambition de joindre l'utile à l'agréable en en faisant une activité complémentaire.
         </p>
         <div class="choice" data-aos="fade-up" data-aos-duration="2000">
@@ -60,7 +60,7 @@
 
 <style lang="scss" scoped>
 .mainAbout{
-    margin-bottom:50px;
+    
     h2{
         
     }
@@ -124,15 +124,17 @@
             position: absolute;
             display: flex;
             flex-direction: column;
-            row-gap: 30px;
-            height:100%;
+            row-gap: 10px;
+            
             p{
-                
+                margin-top:15px;
+                margin-bottom:25px;
             }
             ul{
                 display: flex;
                 flex-direction: column;
                 row-gap: 10px;
+                
                 .progressContainer{
                     position: relative;
                     width: 100%;
@@ -167,22 +169,24 @@
                 }
             }
             .animation{
-                width:100%;
-                height:auto;
+                height:200px;
+                
             }
         }
     }
 }
 .mainAboutDesk{
-    margin-bottom:100px;
+    
     .toAbsoluteContent{
-
+        height:clamp(300px , 30vw , 450px);
+        margin-bottom: 50px;
         .content{
             display: grid;
             grid-template-columns: 50% 50%;
             grid-template-rows: 30% 70%;
             align-items: center;
             justify-content: space-between;
+            width:100%;
             row-gap: 0;
             p{
                 grid-column: span 2;
@@ -191,12 +195,14 @@
             ul{
                 grid-column: 1;
                 grid-row: 2;
-                align-self: start;
-
+                
             }
             .animation{
                 grid-column: 2;
                 grid-row: span 2;
+                width:30vw;
+                height:auto;
+                max-width: 500px;
             }
         }
     }

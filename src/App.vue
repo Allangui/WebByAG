@@ -79,7 +79,7 @@ export default{
       margin-top: 50px;
     }
     .containerDesk{
-      max-width: 70vw;
+      max-width: 75vw;
       margin-left: auto;
       margin-right: auto;
       margin-top: 100px;

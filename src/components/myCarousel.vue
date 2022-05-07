@@ -65,7 +65,19 @@
     },
   })
 </script>
-
+<style lang="scss">
+:root {
+    --swiper-pagination-color: var(--swiper-theme-color);
+    --swiper-pagination-bullet-size: 8px;
+    --swiper-pagination-bullet-width: 15px;
+    --swiper-pagination-bullet-height: 2px;
+    --swiper-pagination-bullet-inactive-color: var(--light-slate);
+    --swiper-pagination-bullet-inactive-opacity: 0.2;
+    --swiper-pagination-bullet-opacity: 1;
+    --swiper-pagination-bullet-horizontal-gap: 4px;
+    --swiper-pagination-bullet-vertical-gap: 6px;
+}
+</style>
 <style lang="scss" scoped>
 
 
@@ -76,9 +88,9 @@
     padding-bottom: 50px;
 
     .slide{
-      min-width: 300px;
+      min-width: 325px;
       max-width: 500px;
-      width: 70%;
+      width: 75%;
       height: auto;
       background-color: var(--navy-shadow);
       border-top-left-radius: 5px;

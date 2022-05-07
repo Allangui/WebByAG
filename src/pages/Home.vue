@@ -1,5 +1,5 @@
 <template>
-    <div class="mainHome" data-aos="fade-down" data-aos-duration="1000" :class="{mainHomeDesk: mq.mPlus}">
+    <div class="mainHome" data-aos="fade-down" data-aos-duration="1500" :class="{mainHomeDesk: mq.mPlus}">
         <h1>Hello ! Je me présente,</h1>
         <span class="name">Allan Guillotin.</span>
         <span class="welcome">Bienvenue sur mon portfolio !</span>
