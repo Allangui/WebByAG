@@ -17,7 +17,6 @@ import { dom } from "@fortawesome/fontawesome-svg-core";
 dom.watch();
 
 //   IMPORT GLOBAL STYLE
-
 import 'vue3-lottie/dist/style.css'
 import 'aos/dist/aos.css'
 
