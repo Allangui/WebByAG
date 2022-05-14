@@ -81,6 +81,10 @@ export default {
 <style lang="scss" scoped>
 .mainContact{
     margin-bottom:100px;
+    p{
+      max-width: 90%;
+      margin: 30px auto;
+    }
     .container {
     display: block;
     margin:50px auto;
