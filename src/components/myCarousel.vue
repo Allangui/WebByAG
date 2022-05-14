@@ -19,9 +19,10 @@
       <swiper-slide class="slide" v-for="data in datas" :key="data.id" >
           <h3>{{ data.name }}</h3>
           <div class="forBackImg">
-            <img :src="data.img" alt="img" @mouseover="data.isHover= true" >
+            <span class="cursor" v-if="data.id==1 & !data.isHover">Click me <i class="fa-solid fa-hand-pointer fa-lg fa-beat"></i></span>
+            <img :src="data.img" alt="img" @click="data.isHover= true" >
             <Transition name="content">
-              <div v-show="data.isHover" @mouseleave="data.isHover= false" class="contentOnHover">
+              <div v-if="data.isHover" @mouseleave="data.isHover= false" class="contentOnHover">
                 <p>{{ data.description }} </p>
                 <ul>
                   <li v-for="technology in data.technology" :key="technology.id">
@@ -98,6 +99,17 @@
       border-top-right-radius: 5px;
       .forBackImg{
         position: relative;
+        .cursor{
+          position: absolute;
+          font-weight: 700;
+          font-size: 1.2rem;
+          letter-spacing: 2px;
+          top:50%;
+          left:50%;
+          transform: translate(-50%,-50%);
+          color:rgba(245, 26, 26, 0.7);
+          --fa-animation-duration: 1.5s;
+        }
         img{
           display: block;
           width: 100%;
@@ -110,7 +122,7 @@
         }
         .content-enter-active,
         .content-leave-active {
-          transition: opacity .3s ease;
+          transition: opacity .5s ease-in-out;
         }
 
         .content-enter-from,

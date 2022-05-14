@@ -104,6 +104,7 @@ export default {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
+    outline: transparent;
     }
 
     input[type=submit] {
@@ -114,10 +115,12 @@ export default {
     border-radius: 4px;
     cursor: pointer;
     transition: all .5s ease;
+    outline: transparent;
     }
 
     input[type=submit]:hover {
     background-color: var(--green);
+    outline: transparent;
     }
 }
 .mainContactDesk{

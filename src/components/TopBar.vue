@@ -1,9 +1,9 @@
 <template>
     <div class="mainTopBar">
-        <div class="flexLogo" >
-            <img class="logo" src="../assets/logo.svg" alt="logo">
+        <router-link :to="{hash: '#home'}" class="flexLogo">
+                        <img class="logo" src="../assets/logo.svg" alt="logo">
             <img class="logoName" src="../assets/logoName.svg" alt="logoName">
-        </div>
+        </router-link>
         <Burger v-if="mq.s" @click="isMenuOpen? isMenuOpen=false : isMenuOpen=true" :propMenuOpen="isMenuOpen" />
         <nav v-else>
             <router-link :to="{hash: '#home'}">Home</router-link>
@@ -12,7 +12,7 @@
             <router-link :to="{hash: '#contact'}" >Contact</router-link>
         </nav>
         <Transition name="menu">
-            <MenuMobile v-if="isMenuOpen & mq.s"  v-click-outside="onClickOutside"/>
+            <MenuMobile v-if="isMenuOpen & mq.s"  v-click-outside="onClickOutside" @linkClicked="isMenuOpen=false"/>
         </Transition>
     </div>
 </template>

@@ -30,7 +30,7 @@ const router = VueRouter.createRouter({
         if (to.hash) {
           return {
             el: to.hash,
-            top:150,
+            top:200,
             behavior: 'smooth',
           }
         }
