@@ -81,8 +81,6 @@
 }
 </style>
 <style lang="scss" scoped>
-
-
   .swiper {
     height: 100%;
     width: 100%;
