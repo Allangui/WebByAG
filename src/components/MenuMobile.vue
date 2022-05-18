@@ -1,10 +1,10 @@
 <template>
     <div class="mainMenuMobile" >
         <nav>
-            <router-link :to="{hash: '#home'}" @click="$emit('linkClicked')">Home</router-link>
-            <router-link :to="{hash: '#about'}" @click="$emit('linkClicked')">About</router-link>
-            <router-link :to="{hash: '#projects'}" @click="$emit('linkClicked')">My Projects</router-link>
-            <router-link :to="{hash: '#contact'}" @click="$emit('linkClicked')">Contact</router-link>
+            <router-link :to="{hash: '#home', name:'home' , params: { isFromNav: true }}" @click="$emit('linkClicked')">Home</router-link>
+            <router-link :to="{hash: '#about', name:'about' , params: { isFromNav: true }}" @click="$emit('linkClicked')">About</router-link>
+            <router-link :to="{hash: '#projects', name:'projects' , params: { isFromNav: true }}" @click="$emit('linkClicked')">My Projects</router-link>
+            <router-link :to="{hash: '#contact', name:'contact' , params: { isFromNav: true }}" @click="$emit('linkClicked')">Contact</router-link>
         </nav>
     </div>
 </template>

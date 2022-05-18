@@ -1,15 +1,15 @@
 <template>
     <div class="mainTopBar">
-        <router-link :to="{hash: '#home'}" class="flexLogo">
+        <router-link :to="{hash: '#home', name:'home', params: { isFromNav: true }}" class="flexLogo">
                         <img class="logo" src="../assets/logo.svg" alt="logo">
             <img class="logoName" src="../assets/logoName.svg" alt="logoName">
         </router-link>
         <Burger v-if="mq.s" @click="isMenuOpen? isMenuOpen=false : isMenuOpen=true" :propMenuOpen="isMenuOpen" />
         <nav v-else>
-            <router-link :to="{hash: '#home'}">Home</router-link>
-            <router-link :to="{hash: '#about'}">About</router-link>
-            <router-link :to="{hash: '#projects'}">My Projects</router-link>
-            <router-link :to="{hash: '#contact'}" >Contact</router-link>
+            <router-link :to="{hash: '#home', name:'home' , params: { isFromNav: true }}">Home</router-link>
+            <router-link :to="{hash: '#about',name:'about', params: { isFromNav: true }}">About</router-link>
+            <router-link :to="{hash: '#projects',name:'projects', params: { isFromNav: true }}">My Projects</router-link>
+            <router-link :to="{hash: '#contact',name:'contact', params: { isFromNav: true }}" >Contact</router-link>
         </nav>
         <Transition name="menu">
             <MenuMobile v-if="isMenuOpen & mq.s"  v-click-outside="onClickOutside" @linkClicked="isMenuOpen=false"/>
@@ -45,7 +45,7 @@ export default {
             this.isMenuOpen=false
         }
       }
-    }
+    },
 }
 </script>
 
@@ -120,6 +120,11 @@ export default {
                         }
                     }    
                 }
+            }
+        }
+        .router-link-active{
+            &::after{
+                width: 50%;
             }
         }
     }
