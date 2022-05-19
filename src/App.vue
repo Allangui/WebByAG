@@ -40,7 +40,7 @@ methods: {
 
     const options = {
       rootMargin: '0px 0px',
-      threshold: 0
+      threshold: 0.5
     }
     this.sectionObserver = new IntersectionObserver(this.sectionObserverHandler, options)
   
@@ -56,7 +56,6 @@ methods: {
          const sectionId = entry.target.id
          // Push sectionId to router here 
          this.$router.push({ name: sectionId, hash: `#${sectionId}`, params:{isFromNav:false} })
-         console.log('ROUTE : ' , this.$route)
       }
     }
   }

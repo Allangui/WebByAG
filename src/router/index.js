@@ -34,12 +34,10 @@ const router = VueRouter.createRouter({
       }
     ],
     scrollBehavior(to, from, savedPosition) {
-      console.log('to : ', to)
-      console.log('from : ', from)
-      console.log('savedPosition : ', savedPosition)
-      console.log('isfromnav', to.params)
+      // console.log('to : ', to)
+      // console.log('from : ', from)
+      // console.log('savedPosition : ', savedPosition)
         if (to.hash && to.params.isFromNav=='true') {
-          console.log('inside', to.params.isFromNav)
           if (to.hash =="#home"){
             return {
               el: to.hash,

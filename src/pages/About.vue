@@ -86,6 +86,7 @@
             opacity:.5;
             font-size: 1rem;
             letter-spacing: 2px;
+            outline:transparent;
             cursor: pointer;
             &:first-child{
                 background: linear-gradient(90deg, transparent , var(--green-tint));

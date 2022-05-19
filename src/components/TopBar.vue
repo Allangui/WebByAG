@@ -6,13 +6,13 @@
         </router-link>
         <Burger v-if="mq.s" @click="isMenuOpen? isMenuOpen=false : isMenuOpen=true" :propMenuOpen="isMenuOpen" />
         <nav v-else>
-            <router-link :to="{hash: '#home', name:'home' , params: { isFromNav: true }}">Home</router-link>
-            <router-link :to="{hash: '#about',name:'about', params: { isFromNav: true }}">About</router-link>
-            <router-link :to="{hash: '#projects',name:'projects', params: { isFromNav: true }}">My Projects</router-link>
-            <router-link :to="{hash: '#contact',name:'contact', params: { isFromNav: true }}" >Contact</router-link>
+            <router-link :class="whichRouteActive =='home'?'routeActive': null" :to="{hash: '#home', name:'home' , params: { isFromNav: true }}">Home</router-link>
+            <router-link :class="whichRouteActive =='about'?'routeActive': null" :to="{hash: '#about',name:'about', params: { isFromNav: true }}">About</router-link>
+            <router-link :class="whichRouteActive =='projects'?'routeActive': null" :to="{hash: '#projects',name:'projects', params: { isFromNav: true }}">My Projects</router-link>
+            <router-link :class="whichRouteActive =='contact'?'routeActiveContact': null" :to="{hash: '#contact',name:'contact', params: { isFromNav: true }}" >Contact</router-link>
         </nav>
         <Transition name="menu">
-            <MenuMobile v-if="isMenuOpen & mq.s"  v-click-outside="onClickOutside" @linkClicked="isMenuOpen=false"/>
+            <MenuMobile v-if="isMenuOpen & mq.s"  v-click-outside="onClickOutside" @linkClicked="isMenuOpen=false" :whichRouteActive="whichRouteActive"/>
         </Transition>
     </div>
 </template>
@@ -31,6 +31,7 @@ export default {
     data() {
         return {
             isMenuOpen:false,
+            whichRouteActive:'home'
         }
     },
     directives: {
@@ -45,6 +46,13 @@ export default {
             this.isMenuOpen=false
         }
       }
+    },
+    watch: {
+        $route(newValue, oldValue) {
+            console.log('newval',newValue)
+            console.log('oldval',oldValue)
+            return this.whichRouteActive = newValue.name
+        }
     },
 }
 </script>
@@ -122,10 +130,18 @@ export default {
                 }
             }
         }
-        .router-link-active{
+        .routeActive{
             &::after{
-                width: 50%;
+                width:50%;
             }
+        }
+        .routeActiveContact{
+            background-color: var(--green-tint);
+            &:hover{
+                &::after{
+                    width: 0;
+                }
+            }  
         }
     }
     .menu-enter-active,

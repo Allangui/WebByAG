@@ -86,7 +86,11 @@
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
-
+  .swiper-pagination{
+    .swiper-pagination-bullet{
+      border-radius: 0;
+    }
+  }
     .slide{
       min-width: 325px;
       max-width: 500px;
