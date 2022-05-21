@@ -71,13 +71,16 @@
 :root {
     --swiper-pagination-color: var(--green);
     --swiper-pagination-bullet-size: 8px;
-    --swiper-pagination-bullet-width: 15px;
-    --swiper-pagination-bullet-height: 2px;
+    --swiper-pagination-bullet-width: 20px;
+    --swiper-pagination-bullet-height: 3px;
     --swiper-pagination-bullet-inactive-color: var(--light-slate);
     --swiper-pagination-bullet-inactive-opacity: 0.2;
     --swiper-pagination-bullet-opacity: 1;
-    --swiper-pagination-bullet-horizontal-gap: 4px;
+    --swiper-pagination-bullet-horizontal-gap: 5px;
     --swiper-pagination-bullet-vertical-gap: 6px;
+}
+.swiper-pagination-bullet{
+  border-radius: 0;
 }
 </style>
 <style lang="scss" scoped>
@@ -86,11 +89,6 @@
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
-  .swiper-pagination{
-    .swiper-pagination-bullet{
-      border-radius: 0;
-    }
-  }
     .slide{
       min-width: 325px;
       max-width: 500px;
