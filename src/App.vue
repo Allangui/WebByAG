@@ -5,6 +5,7 @@
     <About id="about" class="section"/>
     <Projects id="projects" class="section"/>
     <Contact id="contact" class="section" />
+    <NavSocial v-if="mq.mPlus"/>
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import Home from "./pages/Home.vue"
 import About from "./pages/About.vue"
 import Projects from "./pages/Projects.vue"
 import Contact from "./pages/Contact.vue"
+import NavSocial from"./components/NavSocial.vue"
 
 export default{
   inject:["mq"],
@@ -23,6 +25,7 @@ export default{
     About,
     Projects,
     Contact,
+    NavSocial
   },
   data () {
   return {

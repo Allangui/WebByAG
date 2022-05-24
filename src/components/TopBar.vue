@@ -1,5 +1,5 @@
 <template>
-    <div class="mainTopBar">
+    <div class="mainTopBar" :style="mq.isLandscape?'position:relative;':null">
         <router-link :to="{hash: '#home', name:'home', params: { isFromNav: true }}" class="flexLogo">
                         <img class="logo" src="../assets/logo.svg" alt="logo">
             <img class="logoName" src="../assets/logoName.svg" alt="logoName">
@@ -8,7 +8,7 @@
         <nav v-else>
             <router-link :class="whichRouteActive =='home'?'routeActive': null" :to="{hash: '#home', name:'home' , params: { isFromNav: true }}">Home</router-link>
             <router-link :class="whichRouteActive =='about'?'routeActive': null" :to="{hash: '#about',name:'about', params: { isFromNav: true }}">About</router-link>
-            <router-link :class="whichRouteActive =='projects'?'routeActive': null" :to="{hash: '#projects',name:'projects', params: { isFromNav: true }}">My Projects</router-link>
+            <router-link :class="whichRouteActive =='projects'?'routeActive': null" :to="{hash: '#projects',name:'projects', params: { isFromNav: true }}">Projects</router-link>
             <router-link :class="whichRouteActive =='contact'?'routeActiveContact': null" :to="{hash: '#contact',name:'contact', params: { isFromNav: true }}" >Contact</router-link>
         </nav>
         <Transition name="menu">
@@ -49,8 +49,6 @@ export default {
     },
     watch: {
         $route(newValue, oldValue) {
-            console.log('newval',newValue)
-            console.log('oldval',oldValue)
             return this.whichRouteActive = newValue.name
         }
     },
