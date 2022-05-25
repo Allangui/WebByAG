@@ -129,4 +129,23 @@ export default{
     font-size: clamp(1rem,2vw,1.3rem);
   } 
 }
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--navy);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--lightest-slate);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--dark-slate);
+}
 </style>
