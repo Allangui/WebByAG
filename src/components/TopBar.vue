@@ -1,5 +1,5 @@
 <template>
-    <div class="mainTopBar" :style="mq.isLandscape?'position:relative;':null">
+    <div class="mainTopBar" :style="mq.isLandscape&&mq.mMinus?'position:relative;':null">
         <router-link :to="{hash: '#home', name:'home', params: { isFromNav: true }}" class="flexLogo">
                         <img class="logo" src="../assets/logo.svg" alt="logo">
             <img class="logoName" src="../assets/logoName.svg" alt="logoName">

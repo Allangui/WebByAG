@@ -14,7 +14,7 @@
                 <Transition name="choiceLeft">
                     <div v-if="toggle" class="content">
                         <p>
-                            Les quelques technologies avec lesquelles je travaille sur mes projets :
+                            Technologies avec lesquelles je travaille sur mes projets.
                         </p>
                         <ul>
                             <li class="progressContainer"><span class="progressName">HTML & CSS/SCSS</span><span class="progressBar dev1"></span></li>
@@ -32,7 +32,7 @@
                 <Transition name="choiceRight">
                     <div v-if="!toggle" class="content">
                         <p>
-                            Mon travail de technicien m'a permis d'acquérir nombreuses de ces compétences par le biais de formations professionnelles.
+                            Ici, mon travail de technicien m'a permis d'acquérir nombreuses de ces compétences par le biais de formations professionnelles.
                         </p>
                         <ul>
                             <li class="progressContainer"><span class="progressName">Step 7</span><span class="progressBar aut1"></span></li>
