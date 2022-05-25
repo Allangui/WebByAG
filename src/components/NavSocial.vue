@@ -19,7 +19,7 @@
 <style lang="scss" scoped>
 .mainNavSocial{
     nav{
-        margin: 20px 30px 20px 0;
+        margin: 20px 30px ;
         display: flex;
         column-gap: 20px;
         justify-content: right;
@@ -51,7 +51,6 @@
                 content: '';
                 position: relative;
                 width:1px;
-                
                 height: 20vh;
                 bottom:0;
                 left:0;
