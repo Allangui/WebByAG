@@ -1,5 +1,5 @@
 <template>
-    <div class="mainNavSocial" :class="{mainNavSocialDesk: mq.mPlus}">
+    <div class="mainNavSocial" :class="{mainNavSocialDesk: mq.mPlus,socialLandscape: mq.isLandscape}">
         <nav>
             <a href="https://www.facebook.com/allan.guillotin/" target="_blank"><i class="fa-brands fa-facebook-square fa-2xl"></i></a>
             <a href="https://github.com/Allangui" target="_blank"><i class="fa-brands fa-github-square fa-2xl"></i></a>
@@ -19,7 +19,7 @@
 <style lang="scss" scoped>
 .mainNavSocial{
     nav{
-        margin: 20px 30px 20px 0;
+        margin: 20px 30px 20px 20px;
         display: flex;
         column-gap: 20px;
         justify-content: right;
@@ -58,5 +58,12 @@
                 opacity: .3;
             }
         }
+}
+.socialLandscape{
+    nav{
+        &::after{
+            height:25px;
+        }
+    }
 }
 </style>
