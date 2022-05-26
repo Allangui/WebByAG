@@ -2,7 +2,7 @@
     <div class="mainContact" :class="{mainContactDesk: mq.mPlus}">
         <h2 data-aos="fade-right" data-aos-duration="1000">Contactez-moi !</h2>
         <p data-aos="fade-right" data-aos-duration="1000">
-          Pour toute question ou demande n'hésitez pas à me contacter je reviendrais vers vous dans les plus brefs délais.
+          Pour toute question ou demande n'hésitez pas à me contacter je reviendrai vers vous dans les plus brefs délais.
         </p>
         <div class="container" data-aos="fade-up" data-aos-duration="1000">
             <form @submit.prevent="sendEmail">
