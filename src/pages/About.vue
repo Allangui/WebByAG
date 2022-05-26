@@ -1,11 +1,11 @@
 <template>
     <div class="mainAbout" :class="{mainAboutDesk: mq.mPlus}"  >
         <h2 data-aos="fade-right" data-aos-duration="1500">A propos de moi</h2>
-        <p class="pAbout pAbout1" data-aos="fade-right" data-aos-duration="1500">Je suis un passionné de programmation initialement industrielle mais depuis Juin 2021 s'est rajouté le coding et c'est de là qu'est partis mon aventure dans le monde du développement web  👌.</p>
-        <p class="pAbout pAbout2" data-aos="fade-right" data-aos-duration="1750">A l'heure actuelle je suis technicien en electricité-automation dans une grande usine automobile de la marque aux 4 anneaux.</p>
-        <p class="pAbout pAbout3" data-aos="fade-right" data-aos-duration="2000">C'est donc tout naturellement que j'ai décidé d'y consacrer une petite section en parrallèle dans ce portfolio.</p>
+        <p class="pAbout pAbout1" data-aos="fade-right" data-aos-duration="1000">Je suis un passionné de programmation initialement industrielle mais depuis juin 2021 s'est rajouté le coding et c'est de là qu'est partis mon aventure dans le monde du développement web  👌.</p>
+        <p class="pAbout pAbout2" data-aos="fade-right" data-aos-duration="1250">À l'heure actuelle je suis technicien en electricité-automation dans une grande usine automobile de la marque aux 4 anneaux.</p>
+        <p class="pAbout pAbout3" data-aos="fade-right" data-aos-duration="1500">C'est donc tout naturellement que j'ai décidé d'y consacrer une petite section en parallèle dans ce portfolio.</p>
         
-        <div class="choice" data-aos="fade-up" data-aos-duration="2000">
+        <div class="choice" data-aos="fade-up" data-aos-duration="1500">
             <div class="flexBtn">
                 <button @click="toggle=true" :class="{isLeftActive: toggle}">Slide to Dev</button>
                 <button @click="toggle=false" :class="{isRightActive: !toggle}">Slide to Automation</button>
@@ -106,7 +106,7 @@
     .choiceLeft-leave-active,
     .choiceRight-enter-active,
     .choiceRight-leave-active {
-    transition: all 1s ease-in-out;
+    transition: all .8s ease;
     }
 
     .choiceLeft-enter-from,

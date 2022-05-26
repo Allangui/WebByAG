@@ -144,13 +144,13 @@ export default {
     }
     .menu-enter-active,
     .menu-leave-active {
-    transition: all 1s ease;
+    transition: all .5s ease;
     }
 
     .menu-enter-from,
     .menu-leave-to {
     opacity: 0;
-    transform: translate(100%,-100%) scale(-2,-1) skew(90deg, 45deg);
+    transform: translateX(100%) ;
     
     }
 }

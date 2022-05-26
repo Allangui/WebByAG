@@ -1,11 +1,11 @@
 <template>
     <div class="mainProjects" :class="{mainProjectsDesk: mq.mPlus}" >
-        <h2 data-aos="fade-right" data-aos-duration="1500">Mes réalisations</h2>
-        <p data-aos="fade-right" data-aos-duration="1500">Voici quelques une de mes réalisations, nombreuses d'entre elles proviennent de challenges tiré de <a> Frontend Mentor </a> qui m'a beaucoup servis pour me forger une certaine expériences sur divers aspects du developpement web. 
+        <h2 data-aos="fade-right" data-aos-duration="1000">Mes réalisations</h2>
+        <p data-aos="fade-right" data-aos-duration="1000">Voici quelques-unes de mes réalisations, nombreuses d'entre elles proviennent de challenges tirés de <a> Frontend Mentor </a> qui m'a beaucoup servi pour me forger une certaine expérience sur divers aspects du développement web. 
             <br><span>Encore de nombreux projets sont à venir ! 😉</span>
         </p>
         <div :class="!mq.mPlus?'toOverflowCarousel':null">
-            <MyCarousel data-aos="flip-up" data-aos-duration="2500"/>
+            <MyCarousel data-aos="flip-up" data-aos-duration="1500"/>
         </div>
     </div>
 </template>

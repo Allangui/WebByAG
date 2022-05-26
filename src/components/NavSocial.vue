@@ -41,7 +41,7 @@
             align-items: center;
             opacity: .7;
             a{
-                transition: all .5s ease;
+                transition: all .3s ease;
                 &:hover{
                     transform: translateY(-5px);
                     color: var(--green);
