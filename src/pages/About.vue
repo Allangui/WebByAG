@@ -1,6 +1,6 @@
 <template>
     <div class="mainAbout" :class="{mainAboutDesk: mq.mPlus}"  >
-        <h2 data-aos="fade-right" data-aos-duration="1500">A propos de moi</h2>
+        <h2 data-aos="fade-right" data-aos-duration="1000">A propos de moi</h2>
         <p class="pAbout pAbout1" data-aos="fade-right" data-aos-duration="1000">Je suis un passionné de programmation initialement industrielle mais depuis juin 2021 s'est rajouté le coding et c'est de là qu'est parti mon aventure dans le monde du développement web  👌.</p>
         <p class="pAbout pAbout2" data-aos="fade-right" data-aos-duration="1250">À l'heure actuelle je suis technicien en électricité-automation dans une grande usine automobile de la marque aux 4 anneaux.</p>
         <p class="pAbout pAbout3" data-aos="fade-right" data-aos-duration="1500">C'est donc tout naturellement que j'ai décidé d'y consacrer une petite section en parallèle dans ce portfolio.</p>
