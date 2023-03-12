@@ -3,7 +3,7 @@
         <h1>Hello ! Je me présente,</h1>
         <span class="name">Allan Guillotin.</span>
         <AnimBienvenue/>
-        <p>Celui-ci aura pour but de présenter qui je suis, ce que je fais et avec quoi je le fais. Mais aussi de mettre en avant certains de mes projets réalisés. <br><strong>Bonne visite ! 😀</strong></p>
+        <p>Celui-ci aura pour but de présenter qui je suis, ce que je fais et avec quoi je le fais. Mais aussi de mettre en avant certains de mes projets réalisés. <br><strong>Bonne visite !</strong></p>
         <AnimName/>
     </div>
 </template>

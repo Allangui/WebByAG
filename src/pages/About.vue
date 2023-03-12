@@ -1,9 +1,9 @@
 <template>
     <div class="mainAbout" :class="{mainAboutDesk: mq.mPlus}"  >
         <h2 data-aos="fade-right" data-aos-duration="1000">A propos de moi</h2>
-        <p class="pAbout pAbout1" data-aos="fade-right" data-aos-duration="1000">Je suis un passionné de programmation initialement industrielle mais depuis juin 2021 s'est rajouté le coding et c'est de là qu'est parti mon aventure dans le monde du développement web  👌.</p>
-        <p class="pAbout pAbout2" data-aos="fade-right" data-aos-duration="1250">À l'heure actuelle je suis technicien en électricité-automation dans une grande usine automobile de la marque aux 4 anneaux.</p>
-        <p class="pAbout pAbout3" data-aos="fade-right" data-aos-duration="1500">C'est donc tout naturellement que j'ai décidé d'y consacrer une petite section en parallèle dans ce portfolio.</p>
+        <p class="pAbout pAbout1" data-aos="fade-right" data-aos-duration="1000">Je suis un passionné de programmation initialement industrielle mais depuis juin 2021 s'est également rajouté le coding et c'est de là qu'est parti mon intérêt pour le monde du développement web !</p>
+        <p class="pAbout pAbout2" data-aos="fade-right" data-aos-duration="1250">À l'heure actuelle je suis automaticien pour un des leaders mondial dans le secteur de la production de boisson.</p>
+        <p class="pAbout pAbout3" data-aos="fade-right" data-aos-duration="1500">C'est donc tout naturellement que j'ai décidé d'y consacrer la moitiée de cette section en parallèle.</p>
         
         <div class="choice" data-aos="fade-up" data-aos-duration="1500">
             <div class="flexBtn">
@@ -32,14 +32,14 @@
                 <Transition name="choiceRight">
                     <div v-if="!toggle" class="content">
                         <p>
-                            Ici, mon travail de technicien m'a permis d'acquérir de nombreuses compétences par le biais de formations professionnelles.
+                            Ici, mon travail d'automaticien m'a permis d'acquérir de nombreuses compétences Software par le biais de formations professionnelles et d'éxpérience.
                         </p>
                         <ul>
-                            <li class="progressContainer"><span class="progressName">Step 7</span><span class="progressBar aut1"></span></li>
+                            <li class="progressContainer"><span class="progressName">Simatic Step 7</span><span class="progressBar aut1"></span></li>
                             <li class="progressContainer"><span class="progressName">TIA Portal</span><span class="progressBar aut2"></span></li>
-                            <li class="progressContainer"><span class="progressName">HMI : WinCC / Sutron</span><span class="progressBar aut3"></span></li>
+                            <li class="progressContainer"><span class="progressName">HMI : Zenon / WinCC / Sutron</span><span class="progressBar aut3"></span></li>
                             <li class="progressContainer"><span class="progressName">Robots : Fanuc / KUKKA / ABB</span><span class="progressBar aut4"></span></li>
-                            <li class="progressContainer"><span class="progressName">SEW : MoviTools</span><span class="progressBar aut5"></span></li>
+                            <li class="progressContainer"><span class="progressName">Softs SEW & Danfoss</span><span class="progressBar aut5"></span></li>
                             <li class="progressContainer"><span class="progressName">Caméra 3D : VMT IS</span><span class="progressBar aut6"></span></li>
                             <li class="progressContainer"><span class="progressName">...</span><span class="progressBar more"></span></li>
                         </ul>
